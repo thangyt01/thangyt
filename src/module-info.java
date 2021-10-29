@@ -7,6 +7,7 @@ module QUANLYBENHNHAN {
 	requires java.sql;
 	requires com.microsoft.sqlserver.jdbc;
 	requires java.desktop;
+	requires javafx.web;
 	
 	opens application to javafx.graphics, javafx.fxml, javafx.base, javafx.controls;
 }

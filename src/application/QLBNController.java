@@ -35,8 +35,8 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
 public class QLBNController implements Initializable {
-	private Stage stage = Main.stage;
-	private Scene scene;
+	private static Stage stage = Main.stage;
+	private static Scene scene;
 	
 	TextInputDialog dialog;
 	String rs;
