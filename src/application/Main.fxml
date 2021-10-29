@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="58.0" layoutY="250.0" text="QUẢN LÝ BỆNH NHÂN VÀ ĐIỀU TRỊ" textFill="#f7f7f7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" glyphName="BOOK" layoutX="165.0" layoutY="218.0" size="75" />
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="userName" layoutX="125.0" layoutY="203.0" promptText="User Name" style="-fx-background-color: transperent; -fx-border-color: #0589ff; -fx-border-width: 0 0 2px 0;" />
+            <PasswordField fx:id="password" layoutX="125.0" layoutY="254.0" promptText="Password" style="-fx-background-color: transperent; -fx-border-color: #0598ff; -fx-border-width: 0 0 2px 0;" />
+            <Button layoutX="150.0" layoutY="330.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #0598ff;" text="Login" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label alignment="CENTER" layoutX="118.0" layoutY="427.0" onMouseClicked="#quenmatkhau" prefHeight="18.0" prefWidth="163.0" text="Forgot Your Password ?" textFill="#0598ff">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER" layoutX="128.0" layoutY="148.0" prefHeight="30.0" prefWidth="143.0" text="USER LOGIN" textFill="#0598ff">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#0598ff" glyphName="USERS" layoutX="179.0" layoutY="133.0" size="40" />
+            <FontAwesomeIcon fill="#0598ff" glyphName="USER" layoutX="94.0" layoutY="227.0" size="25" text="" />
+            <FontAwesomeIcon fill="#0598ff" glyphName="KEY" layoutX="94.0" layoutY="278.0" size="20" />
+            <Label fx:id="warning" layoutX="85.0" layoutY="299.0" text="Tên đăng nhập hoặc mật khẩu không đúng" textFill="#0605ff" visible="false" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

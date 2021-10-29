@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="389.0" prefWidth="603.0" style="-fx-background-color: #fffff0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SuabenhnhanController">
+   <children>
+      <AnchorPane layoutX="42.0" layoutY="79.0" prefHeight="293.0" prefWidth="526.0">
+         <children>
+            <Label layoutX="27.0" layoutY="35.0" prefHeight="18.0" prefWidth="58.0" text="Họ và tên" />
+            <Label layoutX="283.0" layoutY="35.0" text="Năm sinh" />
+            <Label layoutX="27.0" layoutY="97.0" prefHeight="18.0" prefWidth="58.0" text="Mã BHYT" />
+            <TextField fx:id="hoten1" layoutX="86.0" layoutY="32.0" promptText="Nhập họ và tên" />
+            <TextField fx:id="namsinh1" layoutX="345.0" layoutY="30.0" prefHeight="26.0" prefWidth="150.0" promptText="Nhập năm sinh" />
+            <TextField fx:id="maBHYT1" editable="false" layoutX="87.0" layoutY="94.0" promptText="Nhập mã BHYT" />
+            <TextField fx:id="gioitinh1" layoutX="345.0" layoutY="93.0" promptText="Nhập giới tính" />
+            <TextField fx:id="diachi1" layoutX="87.0" layoutY="154.0" promptText="Nhập địa chỉ" />
+            <TextField fx:id="sdt1" layoutX="345.0" layoutY="154.0" promptText="Nhập số điện thoại" />
+            <Label layoutX="298.0" layoutY="157.0" text="SĐT" />
+            <Label layoutX="27.0" layoutY="157.0" prefHeight="18.0" prefWidth="50.0" text="Địa chỉ" />
+            <Label layoutX="286.0" layoutY="97.0" text="Giới tính" />
+            <Button layoutX="220.0" layoutY="244.0" mnemonicParsing="false" onAction="#suaBN" prefHeight="35.0" prefWidth="87.0" style="-fx-background-color: #2f3c7e;" text="Lưu thay đổi" textFill="#fbeaeb" />
+            <Line endX="509.99993896484375" endY="1.52587890625E-5" layoutX="14.0" layoutY="208.0" startX="-13.999990463256836" startY="1.52587890625E-5" stroke="#00000073" strokeWidth="0.5" />
+            <Line endX="8.800018310546875" endY="-15.999984741210938" layoutX="254.0" layoutY="16.0" startX="7.999969482421875" startY="191.5" stroke="#00000073" strokeWidth="0.5" />
+            <Line endX="478.5999755859375" endY="1.52587890625E-5" layoutX="40.0" startX="-39.999996185302734" startY="1.52587890625E-5" stroke="#00000073" strokeWidth="0.5" />
+            <Label fx:id="canhbao1" alignment="CENTER" layoutX="140.0" layoutY="216.0" prefHeight="18.0" prefWidth="244.0" text="Vui lòng nhập đủ thông tin" textFill="#e70000" visible="false" />
+            <Label fx:id="canhbao2" alignment="CENTER" layoutX="42.0" layoutY="216.0" prefHeight="18.0" prefWidth="443.0" text="Bệnh nhân x đã được sửa thành công" textFill="#131ee1" visible="false" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="77.0" layoutY="27.0" prefHeight="35.0" prefWidth="455.0" text="Sửa chữa thông tin bệnh nhân">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

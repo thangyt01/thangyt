@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="58.0" layoutY="250.0" text="QUẢN LÝ BỆNH NHÂN VÀ ĐIỀU TRỊ" textFill="#f7f7f7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" glyphName="BOOK" layoutX="165.0" layoutY="218.0" size="75" />
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField editable="false" layoutX="126.0" layoutY="258.0" promptText="Password" style="-fx-background-color: transperent; -fx-border-color: #0589ff; -fx-border-width: 0 0 2px 0;" text="admin" />
+            <Button layoutX="150.0" layoutY="330.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #0598ff;" text="Back" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <TextField fx:id="userName" editable="false" layoutX="125.0" layoutY="203.0" promptText="User Name" style="-fx-background-color: transperent; -fx-border-color: #0589ff; -fx-border-width: 0 0 2px 0;" text="admin" />
+            <Label alignment="CENTER" layoutX="92.0" layoutY="112.0" prefHeight="30.0" prefWidth="216.0" text="FORGOT PASSWORD" textFill="#0598ff">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#0598ff" glyphName="USERS" layoutX="179.0" layoutY="96.0" size="40" />
+            <FontAwesomeIcon fill="#0598ff" glyphName="USER" layoutX="94.0" layoutY="227.0" size="25" text="" />
+            <FontAwesomeIcon fill="#0598ff" glyphName="KEY" layoutX="94.0" layoutY="278.0" size="20" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
