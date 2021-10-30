@@ -31,7 +31,7 @@
             <Label fx:id="canhbao2" alignment="CENTER" layoutX="42.0" layoutY="216.0" prefHeight="18.0" prefWidth="443.0" text="Bệnh nhân x đã được sửa thành công" textFill="#131ee1" visible="false" />
          </children>
       </AnchorPane>
-      <Label alignment="CENTER" layoutX="77.0" layoutY="27.0" prefHeight="35.0" prefWidth="455.0" text="Sửa chữa thông tin bệnh nhân">
+      <Label alignment="CENTER" layoutX="77.0" layoutY="27.0" prefHeight="35.0" prefWidth="455.0" text="Sửa thông tin bệnh nhân">
          <font>
             <Font size="24.0" />
          </font>

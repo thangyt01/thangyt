@@ -30,6 +30,12 @@ public class TrangChuController implements Initializable{
 	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
+		System.out.println(webEngine);
+		try {
+			webEngine.load("");
+		} catch (Exception e){
+			
+		}
 
 		// TODO Auto-generated method stub
 		webEngine = browser.getEngine();
@@ -41,7 +47,6 @@ public class TrangChuController implements Initializable{
 	}
 	
 	public void search() {
-		webEngine = browser.getEngine();
 		url = thanhtimkiem.getText();
 		if(!url.contains("http")) url = "http://" + url;
 		System.out.println(url);
@@ -55,7 +60,6 @@ public class TrangChuController implements Initializable{
 	}
 	public void denqlbn(ActionEvent e) throws IOException {
 		url = webEngine.getLocation();
-		webEngine.load("");
 		Parent root = FXMLLoader.load(getClass().getResource("Quanlybenhnhan.fxml"));
 		scene = new Scene(root);
 		stage = (Stage)((Node)e.getSource()).getScene().getWindow();
@@ -65,7 +69,6 @@ public class TrangChuController implements Initializable{
 	}
 	public void denqlt(ActionEvent e) throws IOException {
 		url = webEngine.getLocation();
-		webEngine.load("");
 		Parent root = FXMLLoader.load(getClass().getResource("Quanlythuoc.fxml"));
 		scene = new Scene(root);
 		stage = (Stage)((Node)e.getSource()).getScene().getWindow();
@@ -75,7 +78,6 @@ public class TrangChuController implements Initializable{
 	}
 	public void denpb(ActionEvent e) throws IOException {
 		url = webEngine.getLocation();
-		webEngine.load("");
 		Parent root = FXMLLoader.load(getClass().getResource("Quanlyphongbenh.fxml"));
 		scene = new Scene(root);
 		stage = (Stage)((Node)e.getSource()).getScene().getWindow();
