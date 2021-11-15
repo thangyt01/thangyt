@@ -21,7 +21,7 @@ public class TrangChuController implements Initializable{
 	private static Stage stage = Main.stage;;
 	private static Scene scene;
 	private static WebEngine webEngine;
-	static String url = "https://music-dxt.herokuapp.com/index.html?fbclid=IwAR0-Uy7fVrk8F8Eg0IYja-QlBJrmV-TOjrYjJ_XtAuup6q3OJaQDi31OTW4";
+	static String url = "https:youtube.com";
 	
 	@FXML
 	private TextField thanhtimkiem;
